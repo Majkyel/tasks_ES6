@@ -1,5 +1,5 @@
 const data = [1, 4, 'Iwona', false, 'Nowak'];
 
-const [ , , Firstname, , Lastname] = data;
+const [ , , firstname, , lastname] = data;
 
-console.log(Firstname + ' ' + Lastname);
+console.log(firstname + ' ' + lastname);
