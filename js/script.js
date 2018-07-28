@@ -1,5 +1,13 @@
-const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
+const grades = [ 
+{ name: 'Anna', grade: 1 }, 
+{ name: 'Michal', grade: 4 }, 
+{ name: 'Mateusz', grade: 2 }, 
+{ name: 'Magda', grade: 5 },
+{ name: 'Krystyna', grade: 3 },
+{ name: 'Paulina', grade: 5 },
+{ name: 'Emil', grade: 5 },
+];
 
-const average = (...args) => console.log(args.reduce((x,y) => x + y) / args.length);
+const average = (...args) => args.reduce((acc, obj) =>  acc + obj.grade, 0) / args.length;
 
-average(...grades);
+console.log(average(...grades));
